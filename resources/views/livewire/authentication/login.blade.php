@@ -12,6 +12,12 @@
                         {{ $message }}
                     </div>
                 @enderror
+                @error('auth.email')
+                    <div class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 font-medium"
+                        role="alert">
+                        {{ $message }}
+                    </div>
+                @enderror
                 <div>
                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         {{ __('auth.Your email') }}

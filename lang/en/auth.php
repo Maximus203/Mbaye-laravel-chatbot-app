@@ -29,6 +29,7 @@ return [
     'Sign in'  => 'Sign in',
     'Don’t have an account yet?'  => 'Don’t have an account yet?',
     'Sign up'  => 'Sign up',
+    'email_not_found' => 'Email not found',
     'failed' => 'These credentials do not match our records.',
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
