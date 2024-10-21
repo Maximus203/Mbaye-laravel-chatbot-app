@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Authentication;
 
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Livewire\Attributes\Validate;
@@ -18,19 +19,23 @@ class Login extends Component
     public function rules()
     {
         return [
-            'email' => 'required|email',
+            'email' => 'required|email|exists:users,email',
             'password' => 'required',
         ];
     }
 
     public function login()
     {
-        $validated = $this->validate();
-
-        if (Auth::attempt($validated)) {
-            return redirect()->route('dashboard');
+        if (!User::where('email', $this->email)->exists()) {
+            $this->addError('auth.email', trans('auth.email_not_found'));
+            return;
+        } else {
+            $validated = $this->validate();
+            if (Auth::attempt($validated, $this->rememberMe)) {
+                return redirect()->route('dashboard');
+            }
+            $this->addError("auth.failed", trans("auth.failed"));
         }
-        return back()->withErrors(["failed", trans("auth.failed")]);
     }
 
     public function render()
