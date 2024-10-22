@@ -5,7 +5,8 @@
 @section('title', __('auth.dashboard'))
 
 @section('slot')
-    <div class="my-10 flex flex-col gap-y-20 md:gap-y-1 md:flex-row justify-center">
-        🚀
+    <div class="flex flex-col md:gap-1 md:flex-row justify-center">
+        @livewire('chat.conversation')
+        @livewire('chat.message')
     </div>
 @endsection

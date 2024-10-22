@@ -21,12 +21,12 @@
         @livewire('header.navigation')
     </header>
 
-    <main class="mx-6 md:mx-16 min-h-screen md:min-h-svh">
+    <main class="mx-6 md:mx-16 min-h-screen md:min-h-[36.3em]">
         @yield('slot')
     </main>
 
     <footer
-        class="bg-gradient-to-b from-gray-50 to-blue-100 text-center text-sm text-black dark:text-gray-200 sticky bottom-0 w-full p-4 dark:from-dark-primary-500 dark:to-dark-primary-400">
+        class="bg-gradient-to-b from-gray-50 to-blue-100 text-center text-sm text-black dark:text-gray-200 sticky bottom-0 w-full p-4 dark:from-dark-primary-500 dark:to-dark-primary-400 ">
         @livewire('footer')
     </footer>
 
