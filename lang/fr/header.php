@@ -1,5 +1,7 @@
 <?php
 
+// Langue française pour la traduction de l'en-tête
+
 return [
     'welcome' => 'Bienvenue',
     'home' => 'Accueil',
@@ -8,5 +10,5 @@ return [
     'Open main menu' => 'Ouvrir le menu principal',
     'Smart interactions' => 'Interactions intelligentes',
     'infinite growth' => 'croissance infinie',
-    'welcome-text' => 'Ici, chez Chatbot CD, nous créons des solutions où innovation et intelligence artificielle se rencontrent pour offrir une expérience utilisateur fluide et personnalisée.'
+    'welcome-text' => 'Ici, avec Mbaye, nous créons des solutions où innovation et intelligence artificielle se rencontrent pour offrir une expérience utilisateur fluide et personnalisée.'
 ];
