@@ -17,8 +17,6 @@
             </h1>
             <p class="text-lg font-normal text-gray-600 lg:text-xl dark:text-gray-200">
                 {{ __('header.welcome-text') }}
-
-
             </p>
         </div>
 

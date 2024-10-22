@@ -1,5 +1,7 @@
 <?php
 
+// English language for header translation
+
 return [
     'welcome' => 'Welcome',
     'home' => 'Home',
@@ -8,5 +10,5 @@ return [
     'Open main menu' => 'Open main menu',
     'Smart interactions' => 'Smart interactions',
     'infinite growth' => 'infinite growth',
-    'welcome-text' => 'Here at Chatbot CD, we create solutions where innovation and artificial intelligence come together to deliver a seamless and personalized user experience.'
+    'welcome-text' => 'Here with Mbaye, we create solutions where innovation and artificial intelligence come together to deliver a seamless and personalized user experience.'
 ];
